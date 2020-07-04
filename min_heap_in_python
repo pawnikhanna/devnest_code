@@ -27,7 +27,7 @@ for i in h:
     
     
 Output :
-Head value of heap : 10
+Root value of heap : 10
 The heap elements : 
 10 30 20 400 
 
