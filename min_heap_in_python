@@ -1,0 +1,35 @@
+import heapq as heap
+  
+h = [] 
+heap.heapify(h) 
+  
+# push items into the heap
+heap.heappush(h, 10) 
+heap.heappush(h, 30) 
+heap.heappush(h, 20) 
+heap.heappush(h, 400) 
+  
+# print minimum or root element
+print("Root value of heap : "+str(h[0])) 
+  
+# printing the elements of the heap 
+print("The heap elements : ") 
+for i in h: 
+    print(i, end = ' ') 
+print("\n") 
+  
+element = heap.heappop(h) 
+  
+# printing the elements of the heap(all elements excpet root) 
+print("The heap elements : ") 
+for i in h: 
+    print(i, end = ' ') 
+    
+    
+Output :
+Head value of heap : 10
+The heap elements : 
+10 30 20 400 
+
+The heap elements : 
+20 30 400 
