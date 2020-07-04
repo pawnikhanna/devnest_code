@@ -1,0 +1,35 @@
+import heapq as heap
+   
+h = [] 
+heap.heapify(h) 
+  
+# Adding items to the heap  
+# Multiply the values by -1. All the highest numbers are now the lowest and vice versa.
+heap.heappush(h, -1 * 10) 
+heap.heappush(h, -1 * 30) 
+heap.heappush(h, -1 * 20) 
+heap.heappush(h, -1 * 400) 
+  
+# print max or root value
+print("Root value of heap : "+str(-1 * h[0])) 
+  
+# printing the elements of the heap 
+print("The heap elements : ") 
+for i in h: 
+    print(-1 * i, end = ' ') 
+print("\n") 
+  
+ele = heap.heappop(h) 
+  
+# printing the elements of the heap 
+print("The heap elements : ") 
+for i in h: 
+    print(-1 * i, end = ' ') 
+
+Output :
+Root value of heap : 400
+The heap elements : 
+400 30 20 10 
+
+The heap elements : 
+30 10 20 
